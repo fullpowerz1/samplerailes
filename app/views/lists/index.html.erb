@@ -4,8 +4,8 @@
 
   <P>タイトル</P>
   <!-- <span><%= list.title %></span> を削除して、以下コードに変更 -->
-  <span><%= list.title %>
-    <%= link_to list.title, "/lists/#{list.id}" %>
+  <span>
+    <%= link_to list.title, list_path(list.id) %>
   </span>
 
   <% end %>
