@@ -11,7 +11,7 @@ def create
   if @list.save
     redirect_to list_path(@list.id)
   else
-    render :new
+    render :new #<= newから indexに変更
   end
 end
 
